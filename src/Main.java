@@ -65,7 +65,7 @@ public static void calculationOfDeliveryDays(int kilometers){
     public static void task3(){
         System.out.println("\nTask 3");
 
-        //Доставка в пределах 20 км занимает сутки.
+        //Доставка в пределах 20 км занимает  сутки.
         //Доставка в пределах от 20 км до 60 км добавляет еще один день доставки.
         //Доставка в пределах 60 км до 100 км добавляет еще одни сутки.
 
