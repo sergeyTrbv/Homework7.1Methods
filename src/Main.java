@@ -6,11 +6,11 @@ public class Main {
         task3();
     }
 
-    public static void chekingYearVerification( int a){
-        if (a % 4 ==0 && a % 100 != 0 || a % 400 ==0){
-            System.out.println(a + " - високосный год");
+    public static void chekingYearVerification( int year){
+        if (year % 4 ==0 && year % 100 != 0 || year % 400 ==0){
+            System.out.println(year + " - високосный год");
         } else {
-            System.out.println(a + " - не високосный год");
+            System.out.println(year + " - не високосный год");
         }
     }
 
@@ -24,15 +24,15 @@ public class Main {
        chekingYearVerification(year);
     }
     //////////////////////////////////////////////////////////////////////////////////////////////
-    public static void chekingOSAndYear(int a, int b){
-        if (a == 0){
-            if (b < 2015) {
+    public static void chekingOSAndYear(int operatingSystem, int year){
+        if (operatingSystem == 0){
+            if (year < 2015) {
                 System.out.println("Установите облечгенную версию приложения для iOS по ссылке");
             }else {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             }
         } else {
-            if (b < 2015){
+            if (year < 2015){
                 System.out.println("Установите облечгенную версию приложения для Android по ссылке");
             }else
                 System.out.println("Установите версию приложения для Android по ссылке");
@@ -51,14 +51,14 @@ public class Main {
     }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
-public static void calculationOfDeliveryDays(int a){
+public static void calculationOfDeliveryDays(int kilometers){
     int deliveryDays = 1;
 
-    if (a <= 20){
+    if (kilometers <= 20){
         System.out.println("Потребуется дней : " + deliveryDays);
-    } else if (a > 20 && a <= 60){
+    } else if (kilometers > 20 && kilometers <= 60){
         System.out.println("Потребутся дней: " + (deliveryDays + 1));
-    } else if (a > 60 && a <=100){
+    } else if (kilometers > 60 && kilometers <=100){
         System.out.println("Потребуется дней: " + (deliveryDays + 2));
     }
 }
